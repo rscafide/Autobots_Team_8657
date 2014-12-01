@@ -34,6 +34,7 @@
 \*---------------------------------------------------------------------------------------------------4246-*/
 void forwardTime(int t, int percentPower);
 void forwardRev (int rev, int percentPower);
+void moveForward (int degrees);
 task main()
 
 {
@@ -81,4 +82,23 @@ void forwardRev (int rev,int percentPower) {
 
 	motor[motorC] = 0;
 	motor[motorB] = 0;
+
+
+/*
+
+GOING FORWARDS 
+
+*/
+
+
+void moveForward() {
+	
+
+bMotorReflected [motorC]=1;
+motor [motorB] = degrees;
+motor [motorC] = degrees;
+
+
 }
+
+
